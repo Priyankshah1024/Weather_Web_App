@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container floating">
+        <h1>Weather App</h1><br><br>
+        <div class="input-container" id="cntry">
+            <label for="country">Select Country:</label>
+            <select class="form-select" id="country" name="country">
+              <option value="">Select a Country</option>
+            </select>
+            
+        </div>
+        <div class="input-container" id="cityName">
+            <label for="city">Select City:</label>
+            <select class="form-select" id="city" name="city">
+              <option value="">Select a City</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button class="submit-button" onclick="WeatherData()">Get Weather</button>
+        </div>
+        <div id="weatherData"></div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
